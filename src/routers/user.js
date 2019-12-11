@@ -8,7 +8,6 @@ const router = new express.Router()
 
 router.post('/users', async (req, res) => {
     const user = new User(req.body)
-    return res.send('Test')
 
     try {
         await user.save()
